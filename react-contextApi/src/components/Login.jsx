@@ -15,8 +15,8 @@ const Login = () => {
     return (
         <>
             <h2>Login</h2>
-            <input type="text" placeholder='username' value={username} onChange={(event) => { setUsername(e.target.value) }} />
-            <input type="text" placeholder='password' value={password} onChange={(event) => { setPassword(e.target.value) }} />
+            <input type="text" placeholder='username' value={username} onChange={(event) => { setUsername(event.target.value) }} />
+            <input type="text" placeholder='password' value={password} onChange={(event) => { setPassword(event.target.value) }} />
             <button onClick={handleSubmit}>Submit</button>
         </>
     )
